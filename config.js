@@ -40,7 +40,7 @@ module.exports = {
     KOYEB_API_KEY: process.env.KOYEB_API_KEY || '',
     KOYEB_APP_NAME: process.env.KOYEB_APP_NAME || '',
     TERMUX_VPS: toBool(process.env.TERMUX || process.env.VPS),
-    AUTO_STATUS_VIEW: toBool(process.env.AUTO_STATUS_VIEW),
+    AUTO_STATUS_VIEW: toBool(process.env.AUTO_STATUS_VIEW || 'true',
     APIKEY: process.env.APIKEY || 'free',
     AUTH_FILE: process.env.AUTH_FILE || false,
     START_MSG: toBool(process.env.START_MSG || 'true'),
